@@ -1,0 +1,455 @@
+/* main setting */
+*
+{
+    margin:0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Lato", sans-serif;
+}
+.container
+{
+    margin: auto;
+    width: 60%;
+}
+/* end of main setting */
+/* start of navbar */
+nav
+{
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    z-index: 4;
+}
+nav ul
+{
+    position: relative;
+    width: 90%;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 2em;
+    padding: .6em;
+}
+nav ul li:first-of-type
+{
+    margin-left: 2em;
+}
+nav ul li i
+{
+    color: #FFF;
+    padding: 0;
+}
+nav ul li a
+{
+    color: #FFF;
+    font-size: 17px;
+}
+nav ul li:hover
+{
+    background-color: rgb(206, 206, 206);
+}
+nav ul li:hover a,
+nav ul li:hover i
+{
+    color: black;
+}
+nav ul li .drobdown
+{
+    display: none;
+}
+nav ul li:hover .drobdown
+{
+   background-color: #FFF;
+   width: 110px;
+   position: absolute;
+   z-index: 5;
+   top: 98%;
+   left:430px;
+   display: block;
+   box-shadow: .5px .5px 10px #CCC;
+}
+nav ul li:hover .drobdown li
+{
+    padding: .7em;
+    width: 80%;
+}
+nav ul li:hover .drobdown li:first-of-type
+{
+    margin-left: 0;
+}
+nav ul li:hover .drobdown li:hover
+{
+    background-color:rgb(206, 206, 206);;
+}
+.fa-search
+{
+    color: #FFF;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 30px;
+    height: 38.6px;
+    line-height: 2.4;
+    padding-left:1.2em ;
+    cursor: pointer;
+}
+.fa-search:hover
+{
+    background-color: #f50a0a;
+}
+/* end of navbar */
+/* start of header section */
+header
+{
+    overflow: hidden;
+    position: relative;
+}
+header figure
+{
+    width: 500%;
+    height: 100vh;
+    
+}
+header figure img
+{
+    float: left;
+    width: 20%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    animation: slider 15s linear infinite;
+}
+@keyframes slider
+{
+    0%,15%
+    {
+        left: 0;
+    }
+    20%,55%
+    {
+        left: -20%;
+    }
+    60%,80%
+    {
+        left: -40%;
+    }
+    85%,100%
+    {
+        left: -60%;
+    }
+}
+/* end of header section */
+/* start of abour section */
+main
+{
+    perspective: 300px;
+}
+main .container p
+{
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 5em;
+}
+main .container figure
+{
+    position: relative;
+}
+main .container figure img
+{
+    display: inline-block;
+    width: 20%;
+    margin: 6%;
+    transform: translateZ(-15px);
+    border-radius: 3%;
+}
+main .container figure img:first-of-type
+{
+    margin-left: 8%;
+}
+main .container figure p
+{
+    display: inline-block;
+    width: 15%;
+   position: absolute;
+   margin-left: 12%;
+   font-size: 17px;
+}
+main .container figure p:first-of-type
+{
+    margin-left: 15%;
+}
+/* end of about section */
+/* tour section */
+section
+{
+    background-color: #000;
+}
+section .container h1
+{
+    color: #FFF;
+    padding-top: 2em;
+}
+section .container span
+{
+    font-size: 13px;
+}
+section .container div
+{
+    background-color: #FFF;
+    margin-bottom: 2em;
+}
+section .container .dates
+{
+    width: 96%;
+}
+section .container .dates p
+{
+    padding: .6em 0 .6em 1em;
+    color: #666;
+    border-bottom: 1px solid #CCC;
+}
+section .container .dates .firstP::after,
+section .container .dates .secondP::after
+{
+    content: "sold out";
+    display: inline-block;
+    width: 60px;
+    height: 3.5vh;
+    color: #FFF;
+    line-height: 1.7;
+    margin-left: 1em;
+    font-size: 14px;
+    padding-left:4px;
+    background-color: #f50a0a;
+    cursor: pointer;
+}
+section .container .ticket
+{
+    width: 31%;
+    display: inline-block;
+    margin-right:1%;
+}
+section .container .ticket figure
+{
+    width: 100%;
+    position: relative;
+}
+section .container .ticket figure img
+{
+    width: 100%;
+}
+section .container .ticket figure .layer
+{
+    background-color: transparent;
+}
+section .container .ticket figure:hover .layer
+{
+    background-color: #000;
+}
+section .container .ticket h3,
+section .container .ticket span,
+section .container .ticket p
+{
+    margin-top: 1em ;
+    padding-left: 1em;
+}
+section .container .ticket h3
+{
+    font-size: 15px;
+}
+section .container .ticket span
+{
+    display:inline-block;
+    color:#a7a7a7;
+}
+section .container .ticket p
+{
+    color: #000;
+    font-size: 15px;
+}
+section .container .ticket button
+{
+    background-color: #000;
+    color: #FFF;
+    padding: .8em 2em;
+    margin: 2em 1em 1em;
+    border: none;
+}
+section .container .ticket button:hover
+{
+    background-color: #f50a0a;
+}
+/* end of tour section */
+/* start of contact section */
+.contact
+{
+    background-color: #FFF;
+}
+.contact .container
+{
+    overflow: hidden;
+}
+.contact span
+{
+    font-size: 14px;
+}
+.contact .container .location
+{
+    width: 50%;
+    margin-top: 2em;
+}
+.contact .container .location i
+{
+    cursor: pointer;
+}
+.contact .container .location i:first-of-type::after
+{
+    content: " Chicago, US";
+    display: inline-block;
+    margin-left: 1em;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 1em;
+    cursor: text;
+}
+.contact .container .location i:nth-of-type(2)::after
+{
+    content: "Phone: +00 151515";
+    display: inline-block;
+    margin-left: 1em;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 1em;
+    cursor: text;
+}
+.contact .container .location i:last-of-type::after
+{
+    content: " Email: mail@mail.com";
+    display: inline-block;
+    margin-left: 1em;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 1em;
+    cursor: text;
+}
+.contact .container form
+{
+    width: 50%;
+    margin-top: 2em;
+    overflow: hidden;
+}
+.contact .container form input
+{
+    padding: .8em .7em;
+    border:1px solid #ccc;
+    width: 38%;
+    margin-right: 3%;
+}
+.contact .container form input[name="message"]
+{
+    width: 85%;
+    margin: .5em 0 1em;
+}
+.contact .container form input[type="submit"]
+{
+    width: 20%;
+    background-color: #000;
+    color: #FFF;
+    margin-right: 2.5em;
+    padding: .7em 0;
+    font-size: 15px;
+    border-radius: 8%;
+}
+.contact .container form input[type="submit"]:hover
+{
+    background-color: #f50a0a;
+}
+/* end of contact section */
+/* start of map section */
+map img
+{
+    filter: grayscale(40%);
+    width: 100%;
+}
+/* end of map section */
+/* steart of footer */
+footer
+{
+    padding: 1.5em 0;
+}
+footer ul , 
+footer h3
+{
+    text-align: center;
+}
+footer ul li
+{
+    display: inline-block;
+    margin-bottom: 1em;
+    margin-right: .5em;
+    color: #666;
+}
+footer ul li:hover
+{
+    color: #a7a7a7;
+}
+footer h3
+{
+    font-size: 15px;
+    font-weight: 100;
+    color: #666;
+}
+/* end of footer */
+/* start of framework */
+.fl-left
+{
+    float: left;
+}
+.fl-right
+{
+    float: right;
+}
+.layer
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: black;
+    opacity: .5;
+}
+.margin-bottom
+{
+    margin-bottom: 6em;
+}
+.h
+{
+    font-weight: 400;
+    font-family: "Segoe UI",Arial,sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 33px;
+    text-transform: uppercase;
+    color: #000;
+}
+.span
+{
+    display:block;
+    margin: 2em 1em 2em .5em;
+    text-align: center;
+    color: #a7a7a7;
+    font-style:italic ;
+}
+.padding
+{
+    padding-bottom: 5em;
+}
+.pointer
+{
+    cursor: pointer;
+}
+/* end of framework */
